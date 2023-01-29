@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root {
+    --Light-gray-cyan: hsl(185, 41%, 84%);
+    --white: hsl(0, 0%, 100%);
+    --very-Dark-Cyan: hsl(183, 100%, 15%);
+    --Dark-Grayish-Cyan: hsl(186, 14%, 43%);
+    --Grayish-Cyan: hsl(184, 14%, 56%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --Strong-cyan:  hsl(172, 67%, 45%);
+  }
+
+body{
+    background-color: var(--Light-gray-cyan);   
+    font-family: 'Space Mono', monospace;
+  
+}
+
+main{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40vw;
+}
+
+
+.container{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 55vw;
+  height: 30vw;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.amount{
+    background-color: var(--very-Dark-Cyan);
+    display: flex;
+    height: 90%;
+    margin-right: 20px;
+    border-radius: 10px;
+    width: 25vw;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bill{
+    color: var(--Grayish-Cyan)
+
+    
+}
+.precio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    font-size: 24px;
+    
+}
+
+.total1{
+     color: var(--Grayish-Cyan);
+     position: absolute;
+}
+
+#total2{
+    color: var(--very-Dark-Cyan);
+
+}
+
+.total3{
+    color: var(--very-Dark-Cyan);
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+    height: 3vw;
+    width: 25vw;
+    background-color: transparent;
+    border-color: transparent;
+    display: flex;
+    text-align: right;
+}
+.first{
+    margin: 2vw;
+    height: 80%;
+    width: 40%;
+}
+
+.select{
+    color: var(--Grayish-Cyan);
+}
+
+.percentages{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.percentage{
+    background-color: var(--very-Dark-Cyan);
+    color: white;
+    font-family: 'Space Mono', monospace;
+    height: 3vw;
+    width: 6vw;
+    margin: 3px;
+    border-color: transparent;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.percentage:active{
+    cursor: pointer;
+    background-color: var(--Strong-cyan);
+    color: var(--very-Dark-Cyan);
+    font-family: 'Space Mono', monospace;
+    height: 3vw;
+    width: 6vw;
+    margin: 3px;
+    border-color: transparent;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+
+.percentage:hover{
+    cursor: pointer;
+    background-color: var(--Strong-cyan);
+    color: var(--very-Dark-Cyan);
+    font-family: 'Space Mono', monospace;
+    height: 3vw;
+    width: 6vw;
+    margin: 3px;
+    border-color: transparent;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.custom{
+    background-color: var(--white);
+    color: var(--Dark-Grayish-Cyan);
+    font-family: 'Space Mono', monospace;
+    height: 3vw;
+    width: 6vw;
+    margin: 3px;
+    border-color: transparent;
+    border-radius: 5px;
+    font-size: 22px;
+}
+
+.bill{
+    margin-bottom: 30px;
+}
+
+.people{
+    color: var(--Grayish-Cyan);
+}
+
+.selecttip{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60%;
+}
+
+.tipamount, .total{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+.tipamount2{
+    color: white;
+    font-size: 14px;
+}
+.slashperson{
+    color: var(--Grayish-Cyan);
+    font-size: 14px;
+}
+
+.numberAmount{
+    font-size: 45px;
+    color:  var(--Strong-cyan)
+}
+
+.resetbtn{
+    background-color: var(--Strong-cyan);
+    color: var(--very-Dark-Cyan);
+    font-family: 'Space Mono', monospace;
+    height: 2.8vw;
+    width: 15vw;
+    margin: 3px;
+    border-color: transparent;
+    border-radius: 7px;
+    font-size: 24px;
+}
+

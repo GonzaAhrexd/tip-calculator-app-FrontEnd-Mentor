@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <main>
+    <div class="container">
+      <div class="first">
+        <div class="bill">
+          Bill
+        </div>
+        <div class="precio">
+          <div class="total1">
+            $
+          </div>
+          <div id="total2">
+            <input onchange="cambio()" class="total3" id="bill" type="number" min="0" placeholder="0">
+          </div>
+        </div>
+        <div class="selecttip">
+          <div class="select">
+            Select Tip %
+          </div>
+          <div class="percentages">
+            <button class="percentage" id="tip" value="1.05"> 5% </button>
+            <button class="percentage" id="tip" value="1.10"> 10% </button>
+            <button class="percentage" id="tip" value="1.15"> 15% </button>
+            <button class="percentage" id="tip" value="1.25"> 25% </button>
+            <button class="percentage" id="tip" value="1.50"> 50% </button>
+            <button class="custom"> Custom </button>
+          </div>
+        </div>
+        <div class="people">
+          Number of People </div>
+        <div class="precio">
+          <div class="total1">
+            $
+          </div>
+          <div id="total2">
+            aa
+          </div>
+        </div>
+      </div>
+      <div class="amount">
+
+        <div class="tipamount">
+          <div>
+            <div class="tipamount2">
+              Tip Amount </div>
+            <div class="slashperson"> / person </div>
+          </div>
+          <div class="numberAmount" id="tipamountchange">
+            aa
+          </div>
+        </div>
+        <div class="total">
+          <div>
+            <div class="tipamount2">
+              Total </div>
+              <div class="slashperson">  / person </div>
+          </div>
+          <div class="numberAmount">
+            aa </div>
+        </div>
+        <div class="reset">
+          <button class="resetbtn">  Reset </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./dist/indexx.js"></script>
+</body>
+
+</html>
