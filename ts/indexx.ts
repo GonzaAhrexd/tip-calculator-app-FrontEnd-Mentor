@@ -2,8 +2,14 @@
 const bill:any = document.getElementById('bill')
 const tips:any = document.querySelectorAll('#tip')
 const tipamount:any = document.getElementById('tipamountchange')
-let valor:number = 1
+const people:any = document.getElementById('people')
+const total:any = document.getElementById('numberAmount')
+const custom:any = document.getElementById('customnumber')
+let valor:number = 0
 let billpress:number
+let person:number = 1
+let valorbill:number = 0
+let customN:number = 0;
 tips.forEach((tip:any) => {
     tip.addEventListener('click', cambiar)
 
@@ -27,12 +33,20 @@ function cambiar():void{
 
 })
 
-
+function customCambio(){
+    valor = custom.value
+    cambio()
+}
 
 
 function cambio():void{
-    let a:number = bill.value
-    console.log(valor)
-    console.log(a)
-    tipamount.innerHTML = (valor * a).toFixed(2)
+    valorbill= parseInt(bill.value)
+    person = people.value
+    if(valor!=0)
+    tipamount.innerHTML = (((valor / 100 ) * valorbill)/person).toFixed(2)
+    else 
+    tipamount.innerHTML = ((valorbill)/person).toFixed(2)
+   
+
+    total.innerHTML = (((valor / 100 ) * valorbill + valorbill)/person).toFixed(2)
 }

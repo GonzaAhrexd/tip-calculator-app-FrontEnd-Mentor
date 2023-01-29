@@ -27,7 +27,7 @@
             $
           </div>
           <div id="total2">
-            <input onchange="cambio()" class="total3" id="bill" type="number" min="0" placeholder="0">
+            <input value="0" onchange="cambio()" class="total3" id="bill" type="number" min="0" placeholder="0">
           </div>
         </div>
         <div class="selecttip">
@@ -35,24 +35,24 @@
             Select Tip %
           </div>
           <div class="percentages">
-            <button class="percentage" id="tip" value="1.05"> 5% </button>
-            <button class="percentage" id="tip" value="1.10"> 10% </button>
-            <button class="percentage" id="tip" value="1.15"> 15% </button>
-            <button class="percentage" id="tip" value="1.25"> 25% </button>
-            <button class="percentage" id="tip" value="1.50"> 50% </button>
-            <button class="custom"> Custom </button>
+            <button class="percentage" id="tip" value="05"> 5% </button>
+            <button class="percentage" id="tip" value="10"> 10% </button>
+            <button class="percentage" id="tip" value="15"> 15% </button>
+            <button class="percentage" id="tip" value="25"> 25% </button>
+            <button class="percentage" id="tip" value="50"> 50% </button>
+            <input onchange="customCambio()" class="custom" placeholder="custom" min="0" type="number" id="customnumber"/>
           </div>
         </div>
         <div class="people">
           Number of People </div>
-        <div class="precio">
-          <div class="total1">
-            $
+          <div class="precio">
+            <div class="total1">
+              $
+            </div>
+            <div id="total2">
+              <input onchange="cambio()" class="total3" id="people" type="number" value="1" min="1" placeholder="1">
+            </div>
           </div>
-          <div id="total2">
-            aa
-          </div>
-        </div>
       </div>
       <div class="amount">
 
@@ -63,7 +63,7 @@
             <div class="slashperson"> / person </div>
           </div>
           <div class="numberAmount" id="tipamountchange">
-            aa
+           0.00
           </div>
         </div>
         <div class="total">
@@ -72,8 +72,8 @@
               Total </div>
               <div class="slashperson">  / person </div>
           </div>
-          <div class="numberAmount">
-            aa </div>
+          <div class="numberAmount" id="numberAmount">0.00
+             </div>
         </div>
         <div class="reset">
           <button class="resetbtn">  Reset </button>
