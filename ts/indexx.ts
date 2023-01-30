@@ -5,6 +5,7 @@ const tipamount:any = document.getElementById('tipamountchange')
 const people:any = document.getElementById('people')
 const total:any = document.getElementById('numberAmount')
 const custom:any = document.getElementById('customnumber')
+const resetbtn:any = document.getElementById('resetbtn')
 let valor:number = 0
 let billpress:number
 let person:number = 1
@@ -39,8 +40,20 @@ function customCambio(){
 }
 
 
+function resetear():void{
+
+    console.log('test')
+    bill.value = 0
+    valor = 0
+    people.value = 1
+    
+    cambio()
+}
+
 function cambio():void{
+   
     valorbill= parseInt(bill.value)
+    console.log(valorbill)
     person = people.value
     if(valor!=0)
     tipamount.innerHTML = (((valor / 100 ) * valorbill)/person).toFixed(2)
@@ -50,3 +63,5 @@ function cambio():void{
 
     total.innerHTML = (((valor / 100 ) * valorbill + valorbill)/person).toFixed(2)
 }
+
+resetbtn.addEventListener('click', resetear)
